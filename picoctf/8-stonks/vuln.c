@@ -84,9 +84,18 @@ int buy_stonks(Portfolio *p) {
 	}
 	printf("Stonks chosen\n");
 
+	money = 255;
+	shares = 255;
+	temp = NULL;
 	// TODO: Figure out how to read token from file, for now just ask
 
 	char *user_buf = malloc(300 + 1);
+	printf("size fo api_buf = %ld\n", sizeof(api_buf));
+	printf("size fo f = %ld\n", sizeof(f));
+	printf("size fo money = %ld\n", sizeof(money));
+	printf("size fo shares = %ld\n", sizeof(shares));
+	printf("size fo temp = %ld\n", sizeof(temp));
+	printf("size fo user_buf = %ld\n", sizeof(user_buf));
 	printf("What is your API token?\n");
 	scanf("%300s", user_buf);
 	printf("Buying stonks with token:\n");
